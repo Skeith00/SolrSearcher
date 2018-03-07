@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Solr Searcher</title>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <style>
+            img {
+                max-width:200px;
+                max-height:200px;
+                width: auto;
+                height: auto;
+            }
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+
+        </div>
+        <div class="container">
+            <div>            
+                <form id="searchForm">
+                    <h1>
+                        <img src="./assets/images/Solr_Google_Logo_on_white.png">
+                    </h1>
+                    <input type="text" id="valuetosearch">
+                    <input type="button" id="search" value="Search">
+                </form>
+            </div>
+            <div id="results">
+            </div>
+        </div>
+        <script src="./js/searcher.js"></script>
+
+    </body>
+</html>
